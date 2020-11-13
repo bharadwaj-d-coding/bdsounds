@@ -16,7 +16,7 @@ Created by [Bharadwaj Duggaraju](https://instagram.com/bharadwaj_duggaraju/)
 
 #### Where all the auth takes place. Also has some nice features to tie the project together! Using LOCALSTORAGE Databse to have a storage for my info. Two rows, key and value.
 
-### ← assets
+### assets
 
 #### All the cool images I used!
 
