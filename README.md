@@ -4,12 +4,15 @@ A HTML based project that is designed for a company using the pink and white the
 
 Created by [Bharadwaj Duggaraju](https://instagram.com/bharadwaj_duggaraju/)
 
+## index.html
 
-### ← style.css
+The content!
 
-#### Three style sheets used to create selectors to style all the pages.
+### style.css
 
-### ← script.js
+#### Three style sheets are used to create selectors to style all the pages.
+
+###  script.js
 
 #### Where all the auth takes place. Also has some nice features to tie the project together! Using LOCALSTORAGE Databse to have a storage for my info. Two rows, key and value.
 
