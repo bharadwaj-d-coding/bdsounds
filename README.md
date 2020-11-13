@@ -6,7 +6,7 @@ Created by [Bharadwaj Duggaraju](https://instagram.com/bharadwaj_duggaraju/)
 
 ## index.html
 
-The content!
+#### The content!
 
 ### style.css
 
