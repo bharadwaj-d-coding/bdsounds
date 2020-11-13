@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>BD Sounds | Settings</title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSQODcosCr76ApfAEhidO9s_RUjcFlnrXXHOFWDS9TnPz6sUtAN%3Aclipart-library.com%2Fimages%2FrijG895rT.jpg&usqp=CAU"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style3.css" />
+
+    <script
+      src="https://kit.fontawesome.com/7b9611f913.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body class = "body">
+    
+    <header class="top">
+      <div class="container">
+        <nav>
+          <div class="nav-brand" style="display: flex; color: pink;">
+            <a href="index.html"><i class="fas fa-music"></i></a>
+          </div>
+
+          <div class="menu-icons open">
+            <i class="icon ion-md-menu"></i>
+          </div>
+
+          <ul class="nav-list">
+            <div class="menu-icons close">
+              <i class="icon ion-md-close"></i>
+            </div>
+
+            <li class="nav-item">
+              <a
+                onclick="alert('ARE YOU SURE YOU WANT TO SIGN OUT AND GO HOME'); localStorage.signedin = false;"
+                href="index.html#home"
+                class="nav-link"
+                ><i class="fas fa-home"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="mdashboard.html" class="nav-link  dashboard"
+                ><i class="fas fa-music"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="csupport.html" class="nav-link support"
+                ><i class="fas fa-question"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="settings.html" class="nav-link current settings"
+                ><i class="fas fa-cog"></i
+              ></a>
+            </li>
+            <li class="nav-item" >
+              <a href="#" onclick = "profileclick()" class="nav-link signout"
+                ><i class="fas fa-user"></i
+              ></a>
+              
+              <h2 class = "outs">
+                <a href = "index.html" style = "color: black;" onclick = "alert('Signing you out!')">Sign Out</a>  <a href = "#" onclick = "outclick()"> ❌</a>
+              </h2>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class = "mains" style="padding-top: 85px; width: 50%; margin: 0 auto;">
+      <section class="name ">
+        <div class="namet changename">
+          Name 
+        </div>
+
+        <div class="name-change">
+          <input type="text" placeholder="Name Here" class="namechange" required />
+        </div>
+      </section>
+
+      <section class="name">
+        <div class="namet" style = "margin-top: -5rem;">
+          City
+        </div>
+
+        <div class="city-change ">
+          <input type="text" placeholder="New York City" class="citychange" />
+        </div>
+        <div class="flex2">
+          <div class="stay">
+            <div class="namet" style = "margin-top: 5rem;" >
+              State
+            </div>
+            <div class="state-change">
+              <input type="text" placeholder="Texas" class="statechange" />
+            </div>
+          </div>
+          <div class="stay">
+            <div class="namet" style = "margin-top: 5rem;">
+              Country
+            </div>
+            <div class="state-change">
+              <select name="countries" id="countries">
+                <option value="volvo">US</option>
+                <option value="saab">India</option>
+                <option value="mercedes">China</option>
+                <option value="audi">UK</option>
+              </select>
+            </div>
+          </div>
+            <div class = "changewrap" style = "margin-top: 5rem; margin-bottom : 5rem;">
+           <button class = "special"  onclick = "updatenames()" >
+            UPDATE INFO
+          </button>
+          
+          <h4 class = "alerting" >
+            Information Updated! 
+          </h4>
+        
+        </div>
+          <hr>
+        </div>
+
+        <div  class="email-changes name" style = "margin-top: 5rem;">
+          <h1>
+            Email Address
+              
+          </h1>
+          <h2 class = "inserts">
+            Email goes here
+          </h2>
+          
+          <div class="flex2">
+            <div class="stay">
+              <div class="namet changeemail"  style = "margin-top: 5rem;">
+                New Email Address
+              </div>
+              <div class="state-change">
+                <input type="text" placholder="d" class="statechange emailchange" />
+              </div>
+            </div>
+            <div class="stay">
+              <div class="namet changecheck" style = "margin-top: 5rem;">
+                Current Password
+              </div>
+              <div class="state-change">
+                <input type="text" placholder="d" class="statechange passcheck" />
+              </div>
+            </div>
+          </div>
+          
+       <div class = "changewrap" style = "margin-top: 5rem; margin-bottom : 5rem;">
+           <button class = "special emailchange" onclick = "updateemails()" >
+            UPDATE EMAIL
+          </button>
+          
+          <h4 class = "alerting femail" >
+            Email Updated! 
+          </h4>
+        
+        </div>
+          <hr>
+        </div>
+        
+        <div class = "passchange">
+       
+            <h2>
+              Password
+            </h2>
+            
+            <a href = "#" onclick = "changepass()">Change</a>
+          </div>
+     
+        
+        <div class = "delete">
+          <a href = "index.html" onclick = "deleteaccount()">Delete my account</a>
+          
+        </div>
+        
+     
+      </section>
+    </main>
+
+   
+  </body>
+
+  <script>
+    const item = localStorage.fletter;
+    const out = document.querySelector(".signout");
+    out.textContent = item;
+    out.style =
+      "border: 1px solid black; border-radius: 50%; padding: 0.5rem 1rem;";
+    document.querySelector(".namechange").placeholder = localStorage.namestore;
+      document.querySelector(".inserts").textContent = localStorage.emailstore;
+      document.querySelector(".emailchange").placeholder = localStorage.emailstore;
+
+   
+    
+    if (localStorage.signedin === "true") {
+      document.querySelector(".body").style.display = "block"
+    } else {
+      document.querySelector("main").style.display = "none"
+         document.querySelector("header").style.display = "none"
+
+      
+    }
+    
+    
+   
+   </script>
+</html>

@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>BD Sounds | Music</title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSQODcosCr76ApfAEhidO9s_RUjcFlnrXXHOFWDS9TnPz6sUtAN%3Aclipart-library.com%2Fimages%2FrijG895rT.jpg&usqp=CAU"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style3.css" />
+
+    <script
+      src="https://kit.fontawesome.com/7b9611f913.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="container">
+        <nav>
+          <div class="nav-brand" style="display: flex;">
+            <input type="text" placeholder="🔍 Search" />
+          </div>
+
+          <div class="menu-icons open">
+            <i class="icon ion-md-menu"></i>
+          </div>
+
+          <ul class="nav-list">
+            <div class="menu-icons close">
+              <i class="icon ion-md-close"></i>
+            </div>
+
+            <li class="nav-item">
+              <a
+                onclick="alert('ARE YOU SURE YOU WANT TO SIGN OUT AND GO HOME'); localStorage.signedin = false;"
+                href="index.html#home"
+                class="nav-link"
+                ><i class="fas fa-home"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link current dashboard"
+                ><i class="fas fa-music"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="csupport.html" class="nav-link support"
+                ><i class="fas fa-question"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="settings.html" class="nav-link settings"
+                ><i class="fas fa-cog"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" onclick="profileclick()" class="nav-link signout"
+                ><i class="fas fa-user"></i
+              ></a>
+
+              <h2 class="outs">
+                <a
+                  href="index.html"
+                  style="color: black;"
+                  onclick="alert('Signing you out!')"
+                  >Sign Out</a
+                >
+                <a href="#" onclick="outclick()"> ❌</a>
+              </h2>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="explore" style="padding-top: 85px">
+        <div class="text">
+          <h1>
+            Explore
+          </h1>
+          <p>
+            A collection a high quality and carefully curated music. Just for
+            you!
+          </p>
+
+          <button>
+            Read More
+          </button>
+        </div>
+
+        <div class="featured">
+          <div class="item one">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fthis%20is%20acting.JPG?v=1604336907638"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $5
+              </div>
+            </div>
+
+            <div class="name">
+              This is acting (Deluxe Version)
+            </div>
+          </div>
+          <div class="item two">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2F2.JPG?v=1604344901476"
+                alt="Desire"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $3
+              </div>
+            </div>
+
+            <div class="name">
+              Desire
+            </div>
+          </div>
+          <div class="item three">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fathreee.JPG?v=1604362884446"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $15
+              </div>
+            </div>
+
+            <div class="name">
+              Human (Deluxe)
+            </div>
+          </div>
+          <div class="item four">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Ffour.JPG?v=1604363306974"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $5
+              </div>
+            </div>
+
+            <div class="name">
+              Whatever you Want
+            </div>
+          </div>
+          <div class="item five">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fob.JPG?v=1604364484335"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $15
+              </div>
+            </div>
+
+            <div class="name">
+              Oblivion
+            </div>
+          </div>
+          <div class="item six">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fmuse.JPG?v=1604364693157"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $15
+              </div>
+            </div>
+
+            <div class="name">
+              Muse
+            </div>
+          </div>
+          <div class="item seven">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Ffredom.JPG?v=1604364918474"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $15
+              </div>
+            </div>
+
+            <div class="name">
+              Freedom
+            </div>
+          </div>
+          <div class="item eight">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Ffgetaway.JPG?v=1604365079527"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $15
+              </div>
+            </div>
+
+            <div class="name">
+              Getaway
+            </div>
+          </div>
+          <div class="item nine">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fcp.PNG?v=1604371680698"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $15
+              </div>
+            </div>
+
+            <div class="name">
+              Coldplay
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="recomended">
+        <div class="tit" style="text-align: center;">
+          Recomended for You
+        </div>
+
+        <div class="recomended-flex ">
+          <div class="item v2 o">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fking.JPG?v=1604419130486"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="stuff">
+              <div class="info-flex" style="margin: 1.5rem;">
+                <div class="rating" style="font-size: 1.3rem;">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+
+                <div
+                  class="price"
+                  style="margin-left: 3rem; font-size: 1.5rem;"
+                >
+                  $15
+                </div>
+              </div>
+
+              <div
+                class="name"
+                style="text-align: left; margin-left: 1.5rem; font-size: 2rem;"
+              >
+                Love Stuff
+
+                <p style="font-size: 1.3rem; margin-top: 1rem;">
+                  Love Stuff is the Debut Studio Album of American Songwriter
+                  and Singer, Elle King.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item v2 t">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fdddays.JPG?v=1604419592196"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="stuff">
+              <div class="info-flex" style="margin: 1.5rem;">
+                <div class="rating" style="font-size: 1.3rem;">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+
+                <div
+                  class="price"
+                  style="margin-left: 3rem; font-size: 1.5rem;"
+                >
+                  $15
+                </div>
+              </div>
+
+              <div
+                class="name"
+                style="text-align: left; margin-left: 1.5rem; font-size: 2rem;"
+              >
+                Demon Days
+
+                <p style="font-size: 1.3rem; margin-top: 1rem;">
+                  Demon Days is the Second Studio Album of American Songwriter
+                  and Singer, Goddly Gozilla
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item v2 th">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fking.JPG?v=1604419130486"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="stuff">
+              <div class="info-flex" style="margin: 1.5rem;">
+                <div class="rating" style="font-size: 1.3rem;">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+
+                <div
+                  class="price"
+                  style="margin-left: 3rem; font-size: 1.5rem;"
+                >
+                  $15
+                </div>
+              </div>
+
+              <div
+                class="name"
+                style="text-align: left; margin-left: 1.5rem; font-size: 2rem;"
+              >
+                Love Stuff
+
+                <p style="font-size: 1.3rem; margin-top: 1rem;">
+                  Love Stuff is the Debut Studio Album of American Songwriter
+                  and Singer, Elle King.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item v2 f">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fdddays.JPG?v=1604419592196"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="stuff">
+              <div class="info-flex" style="margin: 1.5rem;">
+                <div class="rating" style="font-size: 1.3rem;">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+
+                <div
+                  class="price"
+                  style="margin-left: 3rem; font-size: 1.5rem;"
+                >
+                  $15
+                </div>
+              </div>
+
+              <div
+                class="name"
+                style="text-align: left; margin-left: 1.5rem; font-size: 2rem;"
+              >
+                Demon Days
+
+                <p style="font-size: 1.3rem; margin-top: 1rem;">
+                  Demon Days is the Second Studio Album of American Songwriter
+                  and Singer, Goddly Gozilla
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item v2 fi">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fking.JPG?v=1604419130486"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="stuff">
+              <div class="info-flex" style="margin: 1.5rem;">
+                <div class="rating" style="font-size: 1.3rem;">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+
+                <div
+                  class="price"
+                  style="margin-left: 3rem; font-size: 1.5rem;"
+                >
+                  $15
+                </div>
+              </div>
+
+              <div
+                class="name"
+                style="text-align: left; margin-left: 1.5rem; font-size: 2rem;"
+              >
+                Love Stuff
+
+                <p style="font-size: 1.3rem; margin-top: 1rem;">
+                  Love Stuff is the Debut Studio Album of American Songwriter
+                  and Singer, Elle King.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="all">
+        <div class="tit" style="text-align: center;">
+          All Music
+        </div>
+        <div class="featured">
+          <div class="item oe">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fwit.JPG?v=1604516400434"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $18
+              </div>
+            </div>
+
+            <div class="name">
+              Witness
+            </div>
+          </div>
+          <div class="item oe">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fm.JPG?v=1604516406828"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $12
+              </div>
+            </div>
+
+            <div class="name">
+              More Than You Know
+            </div>
+          </div>
+          <div class="item oe">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fsdf.JPG?v=1604516412637"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $18
+              </div>
+            </div>
+
+            <div class="name">
+              Stargazing EP
+            </div>
+          </div>
+          <div class="item oe">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fa.JPG?v=1604516424923"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $15
+              </div>
+            </div>
+
+            <div class="name">
+              My Everything
+            </div>
+          </div>
+          <div class="item oe">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fj.JPG?v=1604516438784"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+
+              <div class="price">
+                $15
+              </div>
+            </div>
+
+            <div class="name">
+              Joanne (Deluxe)
+            </div>
+          </div>
+          <div class="item oe">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fh.JPG?v=1604516440725"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $18
+              </div>
+            </div>
+
+            <div class="name">
+              This Hunting Party
+            </div>
+          </div>
+          <div class="item oe">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fthis%20is%20acting.JPG?v=1604336907638"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $5
+              </div>
+            </div>
+
+            <div class="name">
+              This is acting (Deluxe Version)
+            </div>
+          </div>
+          <div class="item to">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2F2.JPG?v=1604344901476"
+                alt="Desire"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $3
+              </div>
+            </div>
+
+            <div class="name">
+              Desire
+            </div>
+          </div>
+          <div class="item thee">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fathreee.JPG?v=1604362884446"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $15
+              </div>
+            </div>
+
+            <div class="name">
+              Human (Deluxe)
+            </div>
+          </div>
+          <div class="item for">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Ffour.JPG?v=1604363306974"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $5
+              </div>
+            </div>
+
+            <div class="name">
+              Whatever you Want
+            </div>
+          </div>
+          <div class="item fve">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fob.JPG?v=1604364484335"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $15
+              </div>
+            </div>
+
+            <div class="name">
+              Oblivion
+            </div>
+          </div>
+          <div class="item ix">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fmuse.JPG?v=1604364693157"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $15
+              </div>
+            </div>
+
+            <div class="name">
+              Muse
+            </div>
+          </div>
+          <div class="item sven">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Ffredom.JPG?v=1604364918474"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $15
+              </div>
+            </div>
+
+            <div class="name">
+              Freedom
+            </div>
+          </div>
+          <div class="item eght">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Ffgetaway.JPG?v=1604365079527"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $15
+              </div>
+            </div>
+
+            <div class="name">
+              Getaway
+            </div>
+          </div>
+          <div class="item nne">
+            <div class="image">
+              <img
+                src="https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2Fcp.PNG?v=1604371680698"
+                alt="this is acting"
+              />
+            </div>
+
+            <div class="info-flex">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+
+              <div class="price">
+                $15
+              </div>
+            </div>
+
+            <div class="name">
+              Coldplay
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2020 Dugg Encorparation. All rights reserved.
+      </p>
+    </footer>
+
+    <script>
+      const item = localStorage.fletter;
+      const out = document.querySelector(".signout");
+      out.textContent = item;
+      out.style =
+        "border: 1px solid black; border-radius: 50%; padding: 0.5rem 1rem;";
+
+      if (localStorage.signedin === "true") {
+        document.querySelector(".body").style.display = "block";
+      } else {
+        document.querySelector("main").style.display = "none";
+        document.querySelector("header").style.display = "none";
+        document.querySelector("footer").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

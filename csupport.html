@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>BD Sounds | Customer Support</title>
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSQODcosCr76ApfAEhidO9s_RUjcFlnrXXHOFWDS9TnPz6sUtAN%3Aclipart-library.com%2Fimages%2FrijG895rT.jpg&usqp=CAU"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style3.css" />
+
+    <script
+      src="https://kit.fontawesome.com/7b9611f913.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="top">
+      <div class="container">
+        <nav>
+          <div class="nav-brand" style="display: flex; color: pink;">
+            <a href="index.html"><i class="fas fa-music"></i></a>
+          </div>
+
+          <div class="menu-icons open">
+            <i class="icon ion-md-menu"></i>
+          </div>
+
+          <ul class="nav-list">
+            <div class="menu-icons close">
+              <i class="icon ion-md-close"></i>
+            </div>
+
+            <li class="nav-item">
+              <a onclick="clickedh()" href="index.html#home" class="nav-link"
+                ><i class="fas fa-home"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="mdashboard.html" class="nav-link  dashboard"
+                ><i class="fas fa-music"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="csupport.html" class="nav-link  current support"
+                ><i class="fas fa-question"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="settings.html" class="nav-link settings"
+                ><i class="fas fa-cog"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" onclick="profileclick()" class="nav-link signout"
+                ><i class="fas fa-user"></i
+              ></a>
+
+              <h2 class="outs">
+                <a
+                  href="index.html"
+                  style="color: black;"
+                  onclick="alert('Signing you out!')"
+                  >Sign Out</a
+                >
+                <a href="#" onclick="outclick()"> ❌</a>
+              </h2>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="help">
+        <div class="form">
+          <input type="text" placeholder="🔍 Search For Articles" />
+        </div>
+
+        <section class="stuff">
+          <div class="items">
+            <div class="flex">
+              <div class="titlev2">
+                First Payout
+              </div>
+
+              <div class="cat">
+                Payment
+              </div>
+            </div>
+
+            <p>
+              With some much information everywhere, it can be hard to know
+              where to go first.
+            </p>
+            <br />
+          </div>
+          <div class="items">
+            <div class="flex">
+              <div class="titlev2">
+                How Private is BD Sounds
+              </div>
+
+              <div class="cat">
+                Privacy
+              </div>
+            </div>
+
+            <p>
+              In todays ever-expanding on the computer world, privacy has become
+              an overarching concern.
+            </p>
+            <br />
+          </div>
+          <div class="items">
+            <div class="flex">
+              <div class="titlev2">
+                BD Sounds API?
+              </div>
+
+              <div class="cat">
+                API
+              </div>
+            </div>
+
+            <p>
+              Learn about the API that allows you to access the BD Sounds
+              Database. Exciting!
+            </p>
+            <br />
+          </div>
+        </section>
+
+        <section class="help-form">
+          <div class="titv3">
+            Have a Chat with the 24/7 Customer Support!
+          </div>
+          <form>
+            <div class="flexv2">
+              <div class="form-control">
+                <label>Name</label>
+                <input type="text" class="n" name="name" autocomplete="none" />
+              </div>
+              <div class="form-control">
+                <label>Email Address <span>*</span></label>
+                <input type="email" placeholder="@" name="email" required />
+              </div>
+            </div>
+
+            <div class="form-control">
+              <label>Message <span>*</span></label>
+              <textarea style="resize: none;" name="message" rows="5">
+              </textarea>
+            </div>
+
+            <input
+              type="submit"
+              onclick="saysubmit()"
+              name="submit"
+              class="submit"
+            />
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2020 Dugg Encorparation. All rights reserved.
+      </p>
+    </footer>
+  </body>
+
+  <script>
+    const item = localStorage.fletter;
+    const out = document.querySelector(".signout");
+    out.textContent = item;
+    out.style =
+      "border: 1px solid black; border-radius: 50%; padding: 0.5rem 1rem;";
+    if (localStorage.signedin === "true") {
+      document.querySelector(".body").style.display = "block";
+    } else {
+      document.querySelector("main").style.display = "none";
+      document.querySelector("header").style.display = "none";
+        document.querySelector("footer").style.display = "none";
+    }
+  </script>
+</html>

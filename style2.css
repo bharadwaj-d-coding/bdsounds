@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+#wrapper {
+  
+  width: 90%;
+  height: 100vh;
+  margin: 5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container, .men-container {
+  width: 100%;
+  max-width: 40rem;
+  background-color: #fff;
+  position: relative;
+  padding: 10rem 0;
+  box-shadow: 0 1px 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+.form-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30rem;
+  background: linear-gradient(to left, #fc6767, #ec008c);
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  z-index: -1;
+}
+
+
+.men-container {
+   padding: 3rem 0;
+   background: linear-gradient(to left, #fc6767, #ec008c);
+  
+}
+.special:hover {
+  background: black;
+  color: white;
+}
+
+.form-heading {
+  color: #fff;
+  font-size: 2.9rem;
+  position: absolute;
+  top: 3.5rem;
+  left: 10rem;
+}
+
+form {
+  transform: translateX(10rem);
+  padding: 2rem 0;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 1px 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.input-group{
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  align-items: baseline;
+  display: flex;
+}
+
+.input-group input {
+  position: relative;
+  width: 100%;
+  padding: 1rem 0;
+  margin-top: 0.5em;
+  border: none;
+  outline: none;
+  font-size: 2.3rem;
+  color: #fc6767;
+}
+
+.input-group > i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #fc6767;
+}
+
+.input-group .bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 1px;
+}
+
+.input-group .bar::before {
+  content: "";
+  position: absolute;
+  background-color: #fc6767;
+  width: 0;
+  height: 2px;
+  transition: width 650ms;
+}
+
+.input-group input:focus + .bar::before {
+  width: 100%;
+}
+
+.input-group button {
+  margin: 3rem auto;
+  padding: 1rem 5rem;
+  background: linear-gradient(to left, #fc6767, #ec008c);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 3rem;
+}
+
+.bar2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 1px;
+}
+
+.menu {
+  
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+  z-index: -1;
+  
+}
+
+.input-group .fa-check-circle {
+  color: green;
+  visibility: hidden;
+  padding-left: 1rem;
+}
+
+.input-group button:focus,
+.input-group button:hover {
+  background: linear-gradient(to right, #fc6767, #ec008c);
+}
+
+.error1,
+.error2, .error3, .error4, .error5, .error6 {
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0;
+  visibility: hidden;
+}
+
+.switch-login {
+  text-align: center;
+}
+
+.switch-login a {
+  text-decoration: none;
+  color: #a1a1a1;
+  font-size: 1.5rem;
+}
+
+.switch-login a span {
+  color: #fc6767;
+}
+
+.switch-login a span:hover {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #fc6767;
+}
+
+@media screen and (max-width: 700px) {
+  .form-container::before {
+    height: 10rem;
+  }
+
+  .form-heading {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  form {
+    border-radius: initial;
+    transform: initial;
+    box-shadow: none;
+  }
+}
+
+.left {
+  font-size: 5rem;
+  padding-right: 7%;
+
+  color: white;
+}
+
+.right {
+  font-size: 5rem;
+  padding-left: 15%;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+header {
+  width: 100%;
+  height: 9rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid pink;
+}
+
+.nav-brand > a > i {
+  color: pink;
+  font-size: 3rem;
+}
+
+.special {
+  background: linear-gradient(to left, #fc6767, #ec008c);
+  border-radius: 2rem;
+  color: #fafafa;
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  transition: background 1000ms;
+}
+
+.special a {
+  color: white;
+}
+.menu-icons i {
+  font-size: 3.5rem;
+  color: pink;
+  cursor: pointer;
+}
+
+.close i {
+  color: #eb648c;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-list {
+  width: 25rem;
+  height: 100vh;
+  background-color: pink;
+  position: fixed;
+  top: 0;
+  right: -26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1550;
+  transition: all 100ms ease-in-out;
+}
+
+.nav-list .active {
+  right: 0;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.nav-item {
+  margin: 1.5rem 0;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    height: 10rem;
+  }
+
+  .nav-brand {
+    font-size: 3.5rem;
+  }
+
+  .nav-list {
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    position: initial;
+    top: initial;
+    right: initial;
+
+    flex-direction: row;
+    transition: initial;
+  }
+
+  .menu-icons {
+    display: none;
+  }
+
+  .nav-item {
+    margin: 0 2.5rem;
+  }
+
+  .nav-link,
+  .current {
+    color: black;
+    font-weight: bolder;
+    position: relative;
+    font-size: 1.6rem;
+  }
+
+  .nav-link::before,
+  .current::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    background-color: pink;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 650ms;
+  }
+
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+.current::before {
+  transform: scaleX(1);
+}
+
+.head h1 {
+  
+  text-align: center;
+  font-size: 4rem;
+  
+}
+
+.head h3 {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2.7rem;
+  
+}
+
+.links {
+ 
+
+  background: linear-gradient(to left, #fc6767, #ec008c);
+  
+}
+
+.link-wrap {
+    box-shadow: 0 1px 1.5rem rgba(0, 0, 0, 0.1);
+  
+    margin: 2rem;
+    margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+
+  
+}
+
+
+
+.link-wrap i {
+  
+  
+  color: white;
+  font-size: 3rem;
+ 
+  
+}
+
+.title {
+ color: white;
+  font-size: 3rem;
+}
+
+.rubicon {
+  color: black;
+}
+
+@media screen and (max-height: 680px) {
+  #wrapper{
+    height: 115vh;
+  }
+  
+  .menu {
+    height: 125vh;
+  }
+}
+
+
+@media screen and (max-height: 380px) {
+  #wrapper, .menu {
+    height: 200vh;
+  }
+}
+
+
+@media screen and (max-height: 180px) {
+  #wrapper, .menu {
+    height: 200vh;
+  }
+}
