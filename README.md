@@ -1,6 +1,6 @@
 # BD Sounds
 
-A HTML based project that is designed for a company using the pink and white theme. Along with the design, the project also uses Javascript to create a functional system that allows you to create an account and sign in with that account.
+A HTML based project that is designed for a company using the pink and white theme. Along with the design, the project also uses Javascript to create a functional system that allows you to create an account and sign in with that account, and adds some additonal security.
 
 Created by [Bharadwaj Duggaraju](https://instagram.com/bharadwaj_duggaraju/)
 
