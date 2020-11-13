@@ -1,0 +1,612 @@
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@100&display=swap");
+
+/*Global Styles*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+/*Header*/
+
+header {
+  
+  width: 100%;
+  height: 9rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+.top {
+  height: 8rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid pink;
+}
+
+.nav-brand > a > i {
+  color: pink;
+  font-size: 3rem;
+}
+
+.special {
+  background: linear-gradient(to left, #fc6767, #ec008c);
+  border-radius: 2rem;
+  color: #fafafa;
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  transition: background 1000ms;
+}
+
+.special a {
+  color: white;
+}
+.menu-icons i {
+  font-size: 3.5rem;
+  color: pink;
+  cursor: pointer;
+}
+
+.close i {
+  color: #eb648c;
+}
+
+.nav-list {
+  width: 25rem;
+  height: 100vh;
+  background-color: pink;
+  position: fixed;
+  top: 0;
+  right: -26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1550;
+  transition: all 100ms ease-in-out;
+}
+
+.nav-list .active {
+  right: 0;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.nav-item {
+  margin: 1.5rem 0;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    height: 10rem;
+  }
+
+  .nav-brand {
+    font-size: 3.5rem;
+  }
+
+  .nav-list {
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    position: initial;
+    top: initial;
+    right: initial;
+
+    flex-direction: row;
+    transition: initial;
+  }
+
+  .menu-icons {
+    display: none;
+  }
+
+  .nav-item {
+    margin: 0 2.5rem;
+  }
+
+  .nav-link,
+  .current {
+    color: black;
+    font-weight: bolder;
+    position: relative;
+    font-size: 1.6rem;
+  }
+
+  .nav-link::before,
+  .current::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    background-color: pink;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 650ms;
+  }
+
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+.current::before {
+  transform: scaleX(1);
+}
+
+/*Home Styles */
+
+.home {
+  width: 100%;
+  height: 85vh;
+  background: linear-gradient(
+      rgba(255, 115, 211, 0.6),
+      rgba(255, 115, 211, 0.6) 100%
+    ),
+    url("https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2FMusic.PNG?v=1603331763889")
+      center no-repeat;
+  background-size: cover;
+  position: relative;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main-message {
+  text-align: center;
+  color: white;
+}
+
+.main-message h1 {
+  font-size: 8vh;
+}
+
+.main-message h2 {
+  font-size: 4vh;
+}
+
+.main-message p {
+  font-size: 1.5vh;
+}
+
+.main-message a {
+  font-size: 1.5vh;
+  text-transform: normal;
+  background-color: white;
+}
+
+.music-grid {
+  max-width: 100%;
+  width: 100%;
+  height: 85vh;
+  margin: 2rem auto;
+  padding-left: 2%;
+  padding-right: 2%;
+
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 3.5rem;
+}
+
+.grid-image img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.activites-grid {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+}
+
+.activities-grid-item {
+  height: 40rem;
+  padding: 5rem;
+  color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 5px 10px 40px 0 rgba(0, 0, 0, 0.2),
+    3px 5px 20px 0 rgba(0, 0, 0, 0.5), 1px 1px 7px 0 rgba(0, 0, 0, 1);
+}
+
+.activities-grid-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+}
+
+.number {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.big {
+  color: pink;
+  font-size: 3.7rem;
+}
+
+.music-grid p {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.music-grid a {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.music-grid i {
+  padding-top: 20%;
+  color: pink;
+}
+
+.title {
+  padding-top: 5%;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.features {
+  height: 115rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.Griddescriptions {
+  padding-top: 5%;
+  font-size: 1.3vh;
+}
+
+.head {
+  text-align: center;
+}
+
+@media screen and (max-width: 610px) {
+  .contact {
+    width: 100%;
+    max-width: 100%;
+    height: 1000px;
+  }
+  .features {
+    height: 215rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .features {
+    height: 160rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .head {
+    margin-top: 20rem;
+  }
+
+  #structure {
+    margin-top: 20rem;
+  }
+  .dashbord {
+    background-color: white;
+  }
+
+  #structure {
+    border-top: 30px solid pink;
+
+    background-color: white;
+    
+    padding-top: 10vh;
+  }
+
+  .notify {
+    background: linear-gradient(to right, #fc6767, #ec008c);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .features {
+    height: 170rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.description {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.pfp {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.name {
+  font-weight: bolder;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.role {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.dashbord {
+  background-color: white;
+  border-bottom: 30px solid pink;
+}
+
+.images img {
+  width: 30%;
+  display: flex;
+
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.head {
+  margin-top: 20rem;
+}
+
+.notify {
+  background: linear-gradient(to right, #fc6767, #ec008c);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.special2 {
+  background: white;
+
+  border-radius: 20px;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  transition: background 650ms;
+  margin-left: 1rem;
+}
+
+.people {
+  align-items: center;
+  display: flex;
+  margin-top: -19rem;
+}
+
+#structure {
+  border-top: 30px solid pink;
+
+  background-color: white;
+
+  padding-top: 30vh;
+}
+
+#structure img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  width: 100%;
+  max-width: 100%;
+  height: 97vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) 100%),
+    url("https://cdn.glitch.com/45835f45-dce2-4435-b975-d4248ff8f180%2F2ff4e7ee-8dab-43d7-8fff-6624c2f50e32.image.png?v=1603499093895")
+      center no-repeat;
+  background-size: cover;
+}
+
+.form-control {
+  margin: initial;
+  margin-bottom: 8px;
+  padding-bottom: 18px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 1.5vh;
+  color: white;
+  font-weight: bold;
+}
+
+.form-control input,
+textarea {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 0.8vh;
+  font-family: inherit;
+  background-color: lightgray;
+  color: black;
+}
+
+.form-control label > span {
+  color: red;
+}
+
+.submit {
+  background-color: #e75480;
+  border: 2px solid #8e44ad;
+  color: black;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2vh;
+  font-family: inherit;
+  border-radius: 10px;
+  transition: 650ms ease-in-out;
+  cursor: pointer;
+}
+
+.foot {
+  padding: 2.5rem 0;
+  background-color: pink;
+  text-align: center;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: bold;
+}
+
+.eqWrap {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.equalHW {
+  flex: 1;
+}
+
+.abovefoot i {
+  font-size: 5vh;
+  align-items: center;
+  margin-left: 1rem;
+  transition: 650ms ease-in-out;
+}
+
+.abovefoot a {
+  margin-left: 0.5rem;
+
+  color: black;
+  font-size: 2vh;
+
+  font-weight: bold;
+  align-items: center;
+}
+
+.abovefoot .big {
+  font-size: 4vh;
+  font-weight: bold;
+  align-items: center;
+}
+
+
+.special:hover {
+  background: black;
+  color: white;
+}
+
+
+
+.special2:hover {
+  background: black;
+  color: white;
+}
+
+
+.submit:hover {
+  background-color: pink;
+}
+
+.abovefoot i:hover {
+  color: lightpink;
+  cursor: pointer;
+}
+
+
+
+.hidden {
+  
+  display: none;
+}
+

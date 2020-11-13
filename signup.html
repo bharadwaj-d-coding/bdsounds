@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Bharadwaj Duggaraju | Sign Up</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style2.css" />
+
+    <script
+      src="https://kit.fontawesome.com/7b9611f913.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="/script.js" defer></script>
+    
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+
+   
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="nav-brand">
+            <a href="index.html">
+              <i class="fas fa-music"></i>
+            </a>
+          </div>
+
+          <div class="menu-icons open">
+            <i class="icon ion-md-menu"></i>
+          </div>
+
+          <ul class="nav-list">
+            <div class="menu-icons close">
+              <i class="icon ion-md-close"></i>
+            </div>
+
+            <li class="nav-item">
+              <a href="index.html#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#features" class="nav-link">Features</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="signin.html" class="nav-link">Log In</a>
+            </li>
+            <li class="nav-item special">
+              <a href="signup.html" class="nav-link  current">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="wrapper">
+      
+      <div class="form-container">
+        <span class="form-heading">Sign Up</span>
+        <form action="" id = "formv2">
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input class = "c" id = "name" type="text" placeholder="Name..." required />
+            <h4 class="error3">Error</h4>
+            <i class="fas fa-check-circle good3"></i>
+            <span class="bar three"></span>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input class = "d" id = "emailv2" type="email" placeholder="Email..." required />
+            <h4 class="error4">Error</h4>
+            <i class="fas fa-check-circle good4"></i>
+            <span class="bar four"></span>
+          </div>
+
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input class = "e" id = "passwordv2" type="password" placeholder="Password..." required />
+            <h4 class="error5">Error</h4>
+            <i class="fas fa-check-circle good5"></i>
+            <span class="bar five"></span>
+          </div>
+
+          <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input class = "f" id  = "password2" type="password" placeholder="Confirm Password..." required />
+            <h4 class="error6">Error</h4>
+            <i class="fas fa-check-circle good6"></i>
+            <span class="bar six"></span>
+          </div>
+
+          <div class="input-group">
+            <button type = "button" onclick = "checksignup()">
+              <i class="fab fa-telegram-plane"></i>
+            </button>
+          </div>
+
+          <div class="switch-login">
+            <a href="signin.html">Allready have an acount <span>Login</span></a>
+          </div>
+        </form>
+      </div>
+
+      
+    </main>
+    
+       <main class="menu">
+      <div class="men-container">
+         <div class="head">
+        <h1>
+          Welcome to BD Sounds
+        </h1>
+        <h3>
+          What do you desire to visit
+        </h3>
+      </div>
+      <div class="links">
+        <div class="link-wrap">
+          <div class="title">
+            Visit the Music Collection
+          </div>
+          <div class="link">
+            <a href="mdashboard.html"><i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <div class="link-wrap">
+          <div class="title">
+            Visit Customer Support
+          </div>
+          <div class="link">
+            <a href="csupport.html"><i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+
+        <div class="link-wrap">
+          <div class="title">
+            View Account Settings
+          </div>
+          <div class="link">
+            <a href="settings.html"><i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+     
+        </div>
+        
+      </div>
+    </main>
+  </body>
+</html>
