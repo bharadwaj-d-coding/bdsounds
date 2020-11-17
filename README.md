@@ -6,19 +6,23 @@ Created by [Bharadwaj Duggaraju](https://instagram.com/bharadwaj_duggaraju/)
 
 ## index.html
 
-#### The content!
+#### The content!. Different Files for different pages.
 
 ### style.css
 
 #### Three style sheets are used to create selectors to style all the pages.
 
+#### Style - Home Page Styles
+#### Style 2 - Sign In/ Up Page Styles
+#### Style 3 - Dashboard and Setting Page Styles
+
 ###  script.js
 
-#### Where all the auth takes place. Also has some nice features to tie the project together! Using LOCALSTORAGE Databse to have a storage for my info. Two rows, key and value.
+#### Where all the auth takes place. Also has some nice features to tie the project together! Using LOCALSTORAGE Database to have a storage for my info. Two rows, key and value.
 
 ### assets
 
-#### All the cool images I used!
+#### All the cool images I used! 
 
 ## Made by Bharadwaj Duggaraju
 
