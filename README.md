@@ -8,7 +8,7 @@ Created by [Bharadwaj Duggaraju](https://instagram.com/bharadwaj_duggaraju/)
 
 #### The content!. Different Files for different pages.
 
-### style.css
+## style.css
 
 #### Three style sheets are used to create selectors to style all the pages.
 
@@ -16,11 +16,11 @@ Created by [Bharadwaj Duggaraju](https://instagram.com/bharadwaj_duggaraju/)
 #### Style 2 - Sign In/ Up Page Styles
 #### Style 3 - Dashboard and Setting Page Styles
 
-###  script.js
+##  script.js
 
 #### Where all the auth takes place. Also has some nice features to tie the project together! Using LOCALSTORAGE Database to have a storage for my info. Two rows, key and value.
 
-### assets
+## assets
 
 #### All the cool images I used! 
 
