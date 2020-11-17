@@ -15,6 +15,9 @@ let acounts = {
 
 //Set the default state
 
+if (localStorage.getItem("accounts") === null) {
+  localStorage.signedin = false;
+}
 
 
 //Query The database if it is not empty
