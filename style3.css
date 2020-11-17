@@ -532,7 +532,7 @@ body {
   outline: none;
   padding-left: 1rem;
   margin: 1.5rem;
-  font-size: 2vh;
+  font-size: 2rem;
   width: 25%;
   height: 60px;
   border-radius: 1rem;
@@ -639,6 +639,7 @@ body {
   font-size: 1.5vh;
   color: black;
   font-weight: bold;
+   
 }
 
 .form-control input,
@@ -650,6 +651,7 @@ textarea {
   border-radius: 1rem;
   display: block;
   width: 100%;
+
   max-width: 100%;
   padding: 10px;
   font-size: 1.8vh;
@@ -833,4 +835,16 @@ select {
 
 .outs {
   display: none;
+}
+
+.help-form form {
+  width: 90%;
+  max-width: 50rem;
+}
+
+
+@media screen and (max-width: 400px) {
+  .cat {
+    display: none;
+  }
 }
