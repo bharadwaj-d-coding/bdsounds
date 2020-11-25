@@ -4,6 +4,12 @@ A HTML based project that is designed for a company using the pink and white the
 
 Created by [Bharadwaj Duggaraju](https://instagram.com/bharadwaj_duggaraju/)
 
+Credits:
+-
+Julio Codes for Nav Bar and Sign In Form Inspiration.
+
+Pagecloud for Home Page Inparation.
+
 ## index.html
 
 #### The content!. Different Files for different pages.
