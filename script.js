@@ -13,7 +13,11 @@ let acounts = {
   }
 };
 
+//Set the default state
 
+if (localStorage.getItem("accounts") === null) {
+  localStorage.signedin = false;
+}
 
 
 //Query The database if it is not empty
@@ -23,6 +27,8 @@ if (localStorage.getItem("accounts") != null) {
   let parse = JSON.parse(ls);
 
   acounts = parse;
+} else {
+  localStorage.signedin = false;
 }
 
 //Setting Stock
@@ -442,5 +448,10 @@ function saysubmit() {
 
 function clickedh() {
   alert("ARE YOU SURE YOU WANT TO SIGN OUT AND GO HOME");
+  localStorage.signedin = false;
+}
+
+function signoutv2() {
+  alert("Signing you out!");
   localStorage.signedin = false;
 }
